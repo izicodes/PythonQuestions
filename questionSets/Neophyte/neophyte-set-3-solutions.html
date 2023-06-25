@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../../style.css" />
+    <link rel="shortcut icon" href="../../img/logo.png" type="image/x-icon" />
+    <link href="https://unpkg.com/pattern.css" rel="stylesheet" />
+    <title>Neophyte Set #3 Solutions | PythonQuestions</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <nav>
+          <div class="logo-container">
+            <a href="../../index.html">
+              <img src="../../img/logo.png" alt="PythonQuestion's logo" />
+              <p>PythonQuestions</p>
+            </a>
+          </div>
+          <ul>
+            <li><a href="">About</a></li>
+            <li><a href="../../solutions.html">Solutions</a></li>
+            <li><a href="">Python Resources</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <h1 class="questionTitle">Neophyte Set #3 Solutions</h1>
+        <div class="questionIntro">
+          <p>
+            <a href="neophyte-set-3.html">Neophyte Set #3</a> had
+            <b>15</b> questions. You had to write code to answer the questions..
+          </p>
+          <p>
+            <b>Topics:</b> Conditional Statements and Looping Statements
+          </p>
+        </div>
+
+        <hr class="divider" />
+
+        <ol class="questionList solutionList">
+          <li>
+            <p class="question">Answer:</p>
+            <p class="code">
+              num = int(input("Enter a number: ")) <br><br>
+
+if num > 0:<br>
+    &emsp;print("Positive")<br>
+elif num < 0:<br>
+    &emsp;print("Negative")<br>
+else:<br>
+    &emsp;print("Zero")
+            </p>
+          </li>
+          <li>
+            <p class="question">Answer:</p>
+            <p class="code">year = int(input("Enter a year: "))<br><br>
+
+if year % 4 == 0 and (year % 100 != 0 or year % 400 == 0):<br>
+    &emsp;print("Leap year")<br>
+else:<br>
+    &emsp;print("Not a leap year")
+</p>
+          </li>
+          <li>
+            <p class="question">Answer:</p>
+            <p class="code">num1 = float(input("Enter the first number: "))<br>
+num2 = float(input("Enter the second number: "))<br><br>
+
+if num1 > num2:<br>
+    &emsp;print("The larger number is", num1)<br>
+else:<br>
+    &emsp;print("The larger number is", num2)
+</p>
+          </li>
+          <li>
+            <p class="question">Answer:</p>
+            <p class="code">num1 = float(input("Enter the first number: "))<br>
+num2 = float(input("Enter the second number: "))<br>
+num3 = float(input("Enter the third number: "))<br><br>
+
+smallest = num1<br><br>
+
+if num2 < smallest:<br>
+    &emsp;smallest = num2<br><br>
+
+if num3 < smallest:<br>
+    &emsp;smallest = num3<br><br>
+
+print("The smallest number is", smallest)
+            </p>
+          </li>
+          <li>
+            <p class="question">Answer:<br /></p>
+            <p class="code">num = int(input("Enter a number: "))<br><br>
+
+is_prime = True<br><br>
+
+if num < 2:<br>
+    &emsp;is_prime = False<br>
+else:<br>
+    &emsp;for i in range(2, int(num**0.5) + 1):<br>
+        &emsp;&emsp;if num % i == 0:<br>
+            &emsp;&emsp;&emsp;is_prime = False<br>
+            &emsp;&emsp;&emsp;break<br><br>
+
+if is_prime:<br>
+    &emsp;print(num, "is a prime number")<br>
+else:<br>
+    &emsp;print(num, "is not a prime number")
+</p>
+          </li>
+          <li>
+            <p class="question">Answer:</p>
+            <p class="code">for num in range(2, 51, 2): <br>
+    print(num)
+</p>
+          </li>
+          <li>
+            <p class="question">Answer:</p>
+            <p class="code">sum = 0<br><br>
+
+for num in range(1, 101):<br>
+    &emsp;sum += num<br><br>
+
+print("The sum of numbers from 1 to 100 is", sum)
+</p>
+          </li>
+          <li>
+            <p class="question">Answer:</p>
+            <p class="code">num = int(input("Enter a positive integer: "))<br>
+factorial = 1<br><br>
+
+if num < 0:<br>
+    &emsp;print("Factorial cannot be calculated for a negative number")<br>
+elif num == 0:<br>
+    &emsp;print("The factorial of 0 is 1")<br>
+else:<br>
+    &emsp;for i in range(1, num + 1):<br>
+        &emsp;&emsp;factorial *= i<br><br>
+
+    &emsp;print("The factorial of", num, "is", factorial)
+</p>
+          </li>
+          <li>
+            <p class="question">Answer:</p>
+            <p class="code">
+              message = "Hello, World!" <br />
+              print(message)
+            </p>
+          </li>
+          <li>
+            <p class="question">Answer:</p>
+            <p>
+              A syntax error occurs when the code violates the rules of the
+              programming language, such as <b>incorrect syntax</b> or
+              <b>misspelled keywords</b>. These errors prevent the code from
+              being parsed or compiled. On the other hand, a logical error does
+              not cause the code to fail during parsing or compilation but leads
+              to <b>incorrect or unexpected results</b> when the code is
+              executed. Logical errors are typically caused by
+              <b>flawed logic or incorrect algorithms</b>.
+            </p>
+          </li>
+          <li>
+            <p class="question">Answer:</p>
+            <p>
+              The first statement assigns the value 5 to the variable x. The
+              second statement is a compound assignment operator. It adds the
+              value 3 to the current value of x (which is 5) and updates the
+              value of x to 8. In other words, the second statement is
+              equivalent to x = x + 3.
+            </p>
+          </li>
+          <li>
+            <p class="question">Answer:</p>
+            <p>
+              To print a multi-line string in Python, you can use triple quotes
+              (either single or double quotes) to enclose the string. For
+              example:
+            </p>
+            <p class="code">
+              print('''This is a <br />multi-line <br />
+              string.''')
+            </p>
+          </li>
+          <li>
+            <p class="question">Answer:</p>
+            <p>
+              Variable scope refers to
+              <b
+                >the portion of the code where a variable is accessible or
+                visible</b
+              >. In Python, variables have different scopes, such as local
+              scope, global scope, and function scope.
+            </p>
+            <p>
+              <b><u>Local scope:</u></b> Variables defined
+              <b>inside a function</b> have local scope and can
+              <b>only be accessed within that function</b>.
+            </p>
+            <p>
+              <b><u>Global scope:</u></b> Variables defined
+              <b>outside of any function or block</b> have global scope and
+              <b>can be accessed from anywhere</b> in the code.
+            </p>
+            <p>
+              <b><u>Function scope:</u></b> Variables defined as
+              <b>function parameters</b> or
+              <b>local variables inside a function</b> have function scope and
+              are <b>only accessible within that function</b>.
+            </p>
+            <p>
+              The scope of a variable determines
+              <b>where it can be used and accessed</b>. Variables in a narrower
+              scope can't be accessed from a broader scope unless explicitly
+              passed as function arguments or accessed using the global keyword.
+            </p>
+          </li>
+          <li>
+            <p class="question">Answer:</p>
+            <p class="code">print("The result is: " + str(5))</p>
+          </li>
+          <li>
+            <p class="question">Answer:</p>
+
+            <p>
+              The "print" function in Python is used to
+              <b>display output or information on the console</b>. It takes
+              <b>one or more arguments</b> and prints them to
+              <b>the standard output</b> (usually the console). The "print"
+              function is commonly used for
+              <b>debugging purposes, displaying results,</b> or
+              <b>providing information to the user</b> during program execution.
+              It can accept <b>various types of data as arguments</b>, including
+              strings, numbers, variables, and expressions. The output from the
+              "print" function is typically <b>displayed as text</b>.
+            </p>
+          </li>
+        </ol>
+        <hr class="divider" />
+        <footer class="questionFooter">
+          <p class="EOTmessageTitle">End of Solution</p>
+          <p class="EOTmessage">
+            Check out other 
+            <a href="../../solutions.html">Solutions</a> page.
+          </p>
+        </footer>
+      </main>
+    </div>
+  </body>
+</html>
