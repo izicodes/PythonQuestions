@@ -1,0 +1,251 @@
+* {
+  font-family: "MS pGothic", "Quicksand", sans-serif;
+  padding: 0;
+  margin: 0;
+  font-size: 17px;
+}
+
+:root {
+  --linen: #f3e9dc;
+  --caramel: #c08552;
+  --caput-mortuum: #5e3023;
+  --raw-umber: #895737;
+  --desert-sand: #dab49d;
+  --black: rgb(44, 39, 39);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.logo-container p {
+  font-family: "Times New Roman", Times, serif;
+}
+
+body {
+  /* background-color: #5e3023; */
+  margin: auto;
+  color: var(--black);
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--linen);
+  background-image: repeating-linear-gradient(
+      45deg,
+      transparent 5px,
+      #c085527e 5px,
+      #c085527e 10px,
+      #5e30230f 10px,
+      #5e30230f 35px,
+      #dab49d7a 35px,
+      #dab49d7a 40px,
+      #c085527e 40px,
+      #c085527e 50px,
+      #5e30230f 50px,
+      #5e30230f 60px,
+      #dab49d7a 60px,
+      #dab49d7a 70px,
+      #89563722 70px,
+      #89563722 80px,
+      #89563722 80px,
+      #89563722 90px,
+      #dab49d7a 90px,
+      #dab49d7a 110px,
+      #89563722 110px,
+      #89563722 120px,
+      #c085527e 120px,
+      #c085527e 140px
+    ),
+    repeating-linear-gradient(
+      135deg,
+      transparent 5px,
+      transparent 5px,
+      #c085527e 5px,
+      #c085527e 10px,
+      #5e30230f 10px,
+      #5e30230f 35px,
+      #dab49d7a 35px,
+      #dab49d7a 40px,
+      #c085527e 40px,
+      #c085527e 50px,
+      #5e30230f 50px,
+      #5e30230f 60px,
+      #dab49d7a 60px,
+      #dab49d7a 70px,
+      #89563722 70px,
+      #89563722 80px,
+      #89563722 80px,
+      #89563722 90px,
+      #dab49d7a 90px,
+      #dab49d7a 110px,
+      #89563722 110px,
+      #89563722 120px,
+      #c085527e 120px,
+      #c085527e 140px
+    );
+}
+.t-center {
+    text-align: center !important;
+}
+
+.divider {
+    border-top: 1px solid var(--raw-umber);
+    margin: 30px 0;
+}
+.divider2 {
+    border-top: 1px solid var(--raw-umber);
+    margin: 50px auto; /* Adjusted margin values */
+    width: 50%;
+    text-align: center;
+}
+.wrapper {
+  width: 50%;
+  background-color: var(--linen);
+  min-height: 100vh;
+}
+
+.warning {
+  color: #d10101;
+}
+
+/* ------------------ */
+nav {
+  background-color: var(--caramel);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+nav a {
+  color: var(--black);
+}
+.logo-container a {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  text-decoration: none;
+}
+.logo-container img {
+  width: 50px;
+}
+.logo-container p {
+  font-size: 1.7rem;
+}
+
+/* ------------------ */
+small {
+  font-size: smaller;
+}
+.set {
+  margin:0;
+}
+main {
+  padding: 20px 35px;
+}
+h1 {
+  font-size: 2.5rem;
+  font-style: italic;
+  padding: 20px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.intro p {
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.questionSelection table,
+tbody,
+td {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 4px;
+  text-align: center;
+}
+.questionSelection table {
+  width: 100%;
+  margin: 30px 0;
+}
+.questionSelection h2 {
+    font-size: 1.8rem;
+    margin: 10px 0;
+}
+
+.questionSelection h3 {
+    font-size: 1.6rem;
+}
+.questionSelection h4 {
+    font-size: 1.3rem;
+    color: var(--caput-mortuum);
+}
+
+.questionSelection ol {
+    margin: 20px 0;
+}
+.questionSelection li  {
+    margin-left: 15px;
+}
+.questionSelection li a {
+    text-decoration: none;
+    color: var(--caput-mortuum);
+}
+.questionSelection li a:hover {
+    text-decoration: underline;
+}
+
+/* --------------------- */
+.questionIntro p, .intro2 {
+    margin-bottom: 20px;
+    text-align: center;
+}
+.questionTitle, .pageTitle {
+    font-style: normal;
+}
+.question {
+    font-weight: bold;
+    
+    margin-bottom: 10px;
+}
+.questionList {
+    list-style: numeric;
+    margin-left: 20px;
+}
+.questionList p{
+  margin-bottom: 10px;
+}
+ol ol {
+    list-style: lower-alpha;
+    margin-left: 50px;
+}
+.questionList > li {
+    margin-bottom: 40px;
+    text-align: justify;
+}
+.EOTmessage, .EOTmessageTitle {
+    text-align: center;
+}
+.EOTmessageTitle {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+.questionFooter {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+.code {
+  font-size: 0.8rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+/* .solutionList li > p > b {
+  background-color: #dbc8b8;
+} */
