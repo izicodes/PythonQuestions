@@ -90,9 +90,6 @@ body {
       #c085527e 140px
     );
 }
-.t-center {
-    text-align: center !important;
-}
 
 .divider {
     border-top: 1px solid var(--raw-umber);
