@@ -37,11 +37,13 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) {
   .wrapper {
-    width: 50%;
+    width: 70%;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
-  /* CSS rules for extra large devices */
+  .wrapper {
+    width: 60%;
+  }
 }
