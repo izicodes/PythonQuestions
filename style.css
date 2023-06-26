@@ -4,7 +4,7 @@
   font-family: "Mingzat", sans-serif;
   padding: 0;
   margin: 0;
-  font-size: 17px;
+  font-size: 15px;
 }
 
 :root {
@@ -125,7 +125,7 @@ nav ul {
   list-style: none;
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 16px;
 }
 nav a {
   color: var(--black);
