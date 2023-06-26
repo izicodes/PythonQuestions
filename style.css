@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+1+Code&family=Mingzat&display=swap");
+
 * {
-  font-family: "MS pGothic", "Quicksand", sans-serif;
+  font-family: "Mingzat", sans-serif;
   padding: 0;
   margin: 0;
   font-size: 17px;
@@ -92,14 +94,14 @@ body {
 }
 
 .divider {
-    border-top: 1px solid var(--raw-umber);
-    margin: 30px 0;
+  border-top: 1px solid var(--raw-umber);
+  margin: 30px 0;
 }
 .divider2 {
-    border-top: 1px solid var(--raw-umber);
-    margin: 50px auto; /* Adjusted margin values */
-    width: 50%;
-    text-align: center;
+  border-top: 1px solid var(--raw-umber);
+  margin: 50px auto; /* Adjusted margin values */
+  width: 50%;
+  text-align: center;
 }
 .wrapper {
   width: 50%;
@@ -146,7 +148,7 @@ small {
   font-size: smaller;
 }
 .set {
-  margin:0;
+  margin: 0;
 }
 main {
   padding: 20px 35px 40px 35px;
@@ -156,7 +158,6 @@ h1 {
   font-style: italic;
   padding: 20px;
   text-align: center;
-  margin-bottom: 20px;
 }
 .intro p {
   margin-bottom: 20px;
@@ -176,79 +177,82 @@ td {
   margin: 30px 0;
 }
 .questionSelection h2 {
-    font-size: 1.8rem;
-    margin: 10px 0;
+  font-size: 1.8rem;
+  margin: 10px 0;
 }
 
 .questionSelection h3 {
-    font-size: 1.6rem;
+  font-size: 1.6rem;
 }
 .questionSelection h4 {
-    font-size: 1.3rem;
-    color: var(--caput-mortuum);
+  font-size: 1.3rem;
+  color: var(--caput-mortuum);
 }
 
 .questionSelection ol {
-    margin: 20px 0;
+  margin: 20px 0;
 }
-.questionSelection li  {
-    margin-left: 15px;
-    margin-bottom: 20px;
+.questionSelection li {
+  margin-left: 15px;
+  margin-bottom: 20px;
 }
 .questionSelection li a {
-    text-decoration: none;
-    color: var(--caput-mortuum);
-    display: flex;
-    align-items: center;
-    gap: 10px;
+  text-decoration: none;
+  color: var(--caput-mortuum);
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
 .questionSelection li a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 /* --------------------- */
-.questionIntro p, .intro2 {
-    margin-bottom: 20px;
-    text-align: center;
+.questionIntro p,
+.intro2 {
+  margin-bottom: 20px;
+  text-align: center;
 }
-.questionTitle, .pageTitle {
-    font-style: normal;
+.questionTitle,
+.pageTitle {
+  font-style: normal;
 }
 .question {
-    font-weight: bold;
-    
-    margin-bottom: 10px;
+  font-weight: bold;
+
+  margin-bottom: 10px;
 }
 .questionList {
-    list-style: numeric;
-    margin-left: 20px;
+  list-style: numeric;
+  margin-left: 20px;
 }
-.questionList p{
+.questionList p {
   margin-bottom: 10px;
 }
 ol ol {
-    list-style: lower-alpha;
-    margin-left: 50px;
+  list-style: lower-alpha;
+  margin-left: 50px;
 }
 .questionList > li {
-    margin-bottom: 40px;
-    text-align: justify;
+  margin-bottom: 40px;
+  text-align: justify;
 }
-.EOTmessage, .EOTmessageTitle {
-    text-align: center;
+.EOTmessage,
+.EOTmessageTitle {
+  text-align: center;
 }
 .EOTmessageTitle {
-    font-weight: bold;
-    font-size: 1.1rem;
+  font-weight: bold;
+  font-size: 1.1rem;
 }
 .questionFooter {
-    display: flex;
-    gap: 15px;
-    flex-direction: column;
+  display: flex;
+  gap: 15px;
+  flex-direction: column;
 }
 .code {
-  font-size: 0.9;
-    font-family: 'Courier New', Courier, monospace;
+  font-size: 1rem;
+  font-family: "M PLUS 1 Code", sans-serif;
 }
 /* .solutionList li > p > b {
   background-color: #dbc8b8;
@@ -264,14 +268,17 @@ ol ol {
 }
 
 .key p {
-  padding: 5px 4px;
+  padding: 1px 9px;
+  border: 1px solid grey;
   font-weight: bold;
 }
 
-#exam-key, .exam {
+#exam-key,
+.exam {
   background-color: var(--blue);
 }
-#homework-key, .homework {
+#homework-key,
+.homework {
   background-color: var(--pink);
 }
 #miniproject-key {
@@ -289,13 +296,68 @@ ol ol {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  gap: 25px;
 }
 
 .questions-footerCon img {
   width: 40px;
-
 }
 
 .hideImage {
   opacity: 0;
+}
+
+.scroll-arrow {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  width: 35px;
+  height: 35px;
+  background-color: var(--caput-mortuum);
+  border-radius: 10%;
+  font-weight: 300;
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-decoration: none;
+  z-index: 999;
+  cursor: pointer;
+}
+.updatesPanel {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  position: fixed;
+  bottom: 20px;
+  /* left: 0px; */
+  left: -400px;
+  z-index: 999;
+  cursor: pointer;
+  transition: 500ms;
+  font-size: 0.85px;
+}
+.updatesPanel:hover {
+  left: 0px;
+}
+.updatesPanel ul {
+  margin-left: 25px;
+  list-style-type: circle;
+  
+}
+.content {
+  border-radius: 0 10px 10px 0;
+  padding: 10px;
+  background-color: var(--caput-mortuum);
+  color: var(--linen);
+  
+}
+#showUpdates button {
+  background-color: var(--caput-mortuum);
+  color: var(--linen);
+  height: 80px;
+  padding: 5px;
+  padding-right: 8px;
+  border: none;
+  border-radius: 0 10px 10px 0;
 }
